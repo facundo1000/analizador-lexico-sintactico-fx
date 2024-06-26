@@ -11,7 +11,13 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.control.Button?>
 
-<fx:root dividerPositions="0.5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="592.0" prefWidth="679.0" type="SplitPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller=".java.dev.fmartinez.analizadorlexicojflexfx.Controller">
+<fx:root dividerPositions="0.5" maxHeight="-Infinity" maxWidth="-Infinity"
+         minHeight="-Infinity" minWidth="-Infinity"
+         orientation="VERTICAL" prefHeight="592.0"
+         prefWidth="679.0" type="SplitPane"
+         xmlns="http://javafx.com/javafx/8"
+         xmlns:fx="http://javafx.com/fxml/1"
+         fx:controller="dev.fmartinez.analizadorlexicojflexfx.Controller">
   <items>
     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="250.0" prefWidth="598.0">
          <children>
