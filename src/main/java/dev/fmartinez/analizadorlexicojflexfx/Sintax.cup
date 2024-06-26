@@ -1,0 +1,29 @@
+package dev.fmartinez.analizadorlexicojflexfx;
+
+import java_cup.runtime.Symbol;
+
+parser code {:
+
+    private Symbol s;
+
+    public void syntax_error(Symbol s) {
+        this.s = s;
+    }
+
+    public Symbol getS() {
+        return s;
+    }
+
+:};
+
+terminal PROGRAMA, VARIABLES, ENTERO, FUNCION, INICIO,
+         FIN, SI, ENTONCES, SINO, LEER, ESCRIBIR, MODULO,
+         PARENTESIS_ABIERTO, PARENTESIS_CERRADO, FIN_LINEA,
+         COMA, ASIGNACION_VARIABLE, ASIGNACION_VALOR, COMPARAR,
+         NUMERO, IDENTIFICADOR, SIMBOLO_ESPECIAL, SEPARACION;
+
+nonterminal INICIO, SENTENCIA, DECLARACION;
+
+start with INICIO;
+
+INICIO ::= INICIO SENTENCIA FIN;
