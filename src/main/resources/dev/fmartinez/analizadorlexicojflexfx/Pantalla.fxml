@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<fx:root dividerPositions="0.5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="592.0" prefWidth="679.0" type="SplitPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller=".java.dev.fmartinez.analizadorlexicojflexfx.Controller">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="250.0" prefWidth="598.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Separator prefWidth="200.0">
+                     <opaqueInsets>
+                        <Insets top="15.0" />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets top="8.0" />
+                     </VBox.margin></Separator>
+                  <Label text="Analizador Léxico">
+                     <font>
+                        <Font name="Georgia Bold Italic" size="17.0" />
+                     </font>
+                  </Label>
+                  <Separator prefWidth="200.0">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                  </Separator>
+                  <HBox alignment="CENTER" prefHeight="243.0" prefWidth="677.0">
+                     <children>
+                        <AnchorPane>
+                           <children>
+                              <VBox alignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <Button fx:id="BAbrirArchivo" mnemonicParsing="false" text="Abrir Archivo">
+                                       <VBox.margin>
+                                          <Insets bottom="15.0" left="5.0" right="5.0" top="5.0" />
+                                       </VBox.margin>
+                                       <font>
+                                          <Font name="Georgia" size="12.0" />
+                                       </font>
+                                       <graphic>
+                                          <ImageView fitHeight="25.0" fitWidth="25.0" opacity="0.8">
+                                             <image>
+                                                <Image url="@Imagenes/Abrir_Archivo.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <TextArea editable="false" VBox.vgrow="ALWAYS">
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </VBox.margin>
+                                    </TextArea>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="5.0" right="5.0" />
+                           </HBox.margin>
+                        </AnchorPane>
+                        <Separator orientation="VERTICAL" prefHeight="200.0">
+                           <HBox.margin>
+                              <Insets left="5.0" right="5.0" />
+                           </HBox.margin>
+                        </Separator>
+                        <AnchorPane prefHeight="242.0" prefWidth="418.0">
+                           <children>
+                              <VBox alignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <HBox alignment="CENTER" prefHeight="52.0" prefWidth="200.0">
+                                       <children>
+                                          <Button fx:id="BAnalizarLexico" mnemonicParsing="false" text="Analizar">
+                                             <HBox.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </HBox.margin>
+                                             <font>
+                                                <Font name="Georgia" size="12.0" />
+                                             </font>
+                                             <graphic>
+                                                <ImageView fitHeight="25.0" fitWidth="25.0">
+                                                   <image>
+                                                      <Image url="@Imagenes/Analizar.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                          <Button fx:id="BLimpiarLexico" mnemonicParsing="false" text="Limpiar">
+                                             <HBox.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </HBox.margin>
+                                             <font>
+                                                <Font name="Georgia" size="12.0" />
+                                             </font>
+                                             <graphic>
+                                                <ImageView fitHeight="25.0" fitWidth="25.0">
+                                                   <image>
+                                                      <Image url="@Imagenes/Limpiar.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                       </children>
+                                    </HBox>
+                                    <Label text="Resultados" textFill="WHITE">
+                                       <font>
+                                          <Font name="Georgia" size="12.0" />
+                                       </font></Label>
+                                    <TextArea editable="false" prefHeight="145.0" prefWidth="287.0" VBox.vgrow="ALWAYS">
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </VBox.margin>
+                                    </TextArea>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Separator prefWidth="200.0">
+                     <opaqueInsets>
+                        <Insets top="15.0" />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets top="8.0" />
+                     </VBox.margin></Separator>
+                  <Label text="Analizador Sintáctico">
+                     <font>
+                        <Font name="Georgia Bold Italic" size="17.0" />
+                     </font>
+                  </Label>
+                  <Separator prefWidth="200.0">
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                  </Separator>
+                  <VBox alignment="CENTER">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="46.0" prefWidth="677.0">
+                           <children>
+                              <Button fx:id="BAnalizarSintactico" mnemonicParsing="false" text="Analizar">
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="25.0" top="5.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="Georgia" size="12.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="25.0" fitWidth="25.0">
+                                       <image>
+                                          <Image url="@Imagenes/Analizar.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="BlimpiarSintatico" mnemonicParsing="false" text="Limpiar">
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="25.0" right="5.0" top="5.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="Georgia" size="12.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="25.0" fitWidth="25.0">
+                                       <image>
+                                          <Image url="@Imagenes/Limpiar.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <TextArea editable="false" prefHeight="200.0" prefWidth="200.0">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </VBox.margin>
+                        </TextArea>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+  </items>
+</fx:root>
+///Cambios por aca
